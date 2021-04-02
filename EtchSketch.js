@@ -41,7 +41,7 @@ function attachListenerDarkenColor() {
     let gridCell = document.querySelectorAll('.gridElement');
     gridCell.forEach((gridElement) => {
         gridElement.addEventListener('mousedown', () => {
-            let rgbaColors = [];
+            let rgbaColors = {};
             //  Grab RGBA value of clicked cell.
             let color = window.getComputedStyle(gridElement).backgroundColor;
             //  IndexOf parenthesis to pull out values and get rid of "rgba()"
